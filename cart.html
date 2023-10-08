@@ -10,12 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link
-        rel="stylesheet"
-
-        href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css"
-      >
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="./css/style1.css">
 </head>
 <body>
 <header>
@@ -67,41 +63,52 @@
 </header>
 <main>
     <h1> Your Cart</h1>
-    <div class="cart_checkout_container">
-        <a class="cart_checkout_btn" href="./checkout.html">Proceed To Checkout</a>
-    </div>
     <div class="cart-container">
         <div class="cart-order-container">
             <div class="cart_order">
                 <section class="image_section">
                     <img src="./Images/Products/laptop.jpg" alt="Order Image">
                 </section>
-                <section class="content_section">
-                    <p class="cart_product_name">Samsung Galaxy Notebook</p>
-                    <p class="cart_product_price"> Rs. 98999</p>
+                <section class="info_section">
+                    <p class="productname">Samsung Galaxy Notebook</p>
+                    <p class="price">Rs 1,06,895</p>
+                </section>
+                <section class="quantity_section">
+                    <button><i class="fa-light fa-minus"></i></button>
+                    <p>2</p>
+                    <button><i class="fa-light fa-plus"></i></button>
+                </section>
+                <section class="total_section">
+                    <p>Total :</p>
+                    <p>1,06,095</p>
+                    <!-- remove section starts-->
                     <form action="">
-                        <label for="qty"><b>Qty</b></label> <br>
-                        <input type="number" id="qty" name="cart_product_qty" id="">
-                        <br> <br>
-                        <button class="cart_product_remove-btn">Remove</button>
-                        <button class="cart_product_savelaterbtn">Save for Later</button>
+                        <button type="submit" class="remove_btn">Remove</button>
                     </form>
+                    <!-- remove section ends -->
                 </section>
             </div>
             <div class="cart_order">
                 <section class="image_section">
                     <img src="./Images/Products/laptop.jpg" alt="Order Image">
                 </section>
-                <section class="content_section">
-                    <p class="cart_product_name">Samsung Galaxy Notebook</p>
-                    <p class="cart_product_price"> Rs. 98999</p>
+                <section class="info_section">
+                    <p class="productname">Samsung Galaxy Notebook</p>
+                    <p class="price">Rs 1,06,895</p>
+                </section>
+                <section class="quantity_section">
+                    <button><i class="fa-light fa-minus"></i></button>
+                    <p>2</p>
+                    <button><i class="fa-light fa-plus"></i></button>
+                </section>
+                <section class="total_section">
+                    <p>Total :</p>
+                    <p>1,06,095</p>
+                    <!-- remove section starts-->
                     <form action="">
-                        <label for="qty"><b>Qty</b></label> <br>
-                        <input type="number" id="qty" name="cart_product_qty" id="">
-                        <br> <br>
-                        <button class="cart_product_remove-btn">Remove</button>
-                        <button class="cart_product_savelaterbtn">Save for Later</button>
+                        <button type="submit" class="remove_btn">Remove</button>
                     </form>
+                    <!-- remove section ends -->
                 </section>
             </div>
             <!-- cart search section starts -->
@@ -125,6 +132,40 @@
                     </section>
                 </div>
             </div>
+            <!-- cart search section ends -->
+        </div>
+        <div class="cart-total-container">
+            <h2>Order Summary</h2>
+            <section>
+                <p>Total Items</p>
+                <p>2</p>
+            </section>
+            <section>
+                <p>Amount</p>
+                <p>2,05,351</p>
+            </section>  
+            <section>
+                <p>Discount</p>
+                <p>10,098</p>
+            </section>
+            <section>
+                <p>Delivery Charges</p>
+                <p>Rs. 150</p>
+            </section>
+            <section>
+                <p>Total Amount</p>
+                <p>Rs 1,06,095</p>
+            </section>
+            <section class="coupon-section">
+                <!-- <label for=""></label> -->
+                <form action="">
+                    <label for="">Do You Have Coupon Code ?</label>
+                    <br>
+                    <input type="text" placeholder="Enter Your Place Coupon Code">
+                    <button type="submit">Apply</button>
+                </form>
+            </section>
+            <button class="checkout-btn">Checkout</button>
         </div>
     </div>   
 </main>
@@ -191,6 +232,7 @@ profileDropdown.classList.add('active-profile-dropdown');
 document.body.addEventListener('click',()=>{
     profileDropdown.classList.remove('active-profile-dropdown');
 })
+
       </script>
 </body>
 </html>
